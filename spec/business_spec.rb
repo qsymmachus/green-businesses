@@ -2,7 +2,7 @@ require_relative "spec_helper"
 
 describe Business do
   context ".search_company" do
-    let!(:business) { Business.create(company: "My Applesauce Company") }
+    let!(:business) { Business.create(company: "Applesauce Incorporated") }
 
     it "finds businesses with a company name similar to the search term" do
       results = Business.search_company("applesauce")
@@ -11,6 +11,11 @@ describe Business do
 
     it "returns nil if no matching company names are found" do
       results = Business.search_company("mashed potatoes")
+      expect(results).to be_nil
+    end
+
+    it "returns nil if no argument is provided" do
+      results = Business.search_company("")
       expect(results).to be_nil
     end
   end
