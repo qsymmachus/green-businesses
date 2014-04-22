@@ -1,0 +1,6 @@
+<div class="business">
+  <h2><%= @business.company %></h2>
+  <p><%= @business.address %></p>
+  <p><%= @business.city %>, <%= @business.zip %></p>
+  <p><%= @business.phone %></p>
+</div>
