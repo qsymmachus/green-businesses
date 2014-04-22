@@ -1,7 +1,24 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
-
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  Search.bindEvents()
 });
+
+var Search = {
+  bindEvents: function() {
+    $('#search').on("submit", this.searchCompany)
+  },
+
+  searchCompany: function(e) {
+    e.preventDefault();
+    $('#results').html("<p id='status'>Searching...</p>")
+    searchTerm = $(this).serialize();
+    $.ajax ({
+      type: 'post',
+      url: '/search',
+      data: searchTerm
+    }).done(function(results) {
+      $('#results').html(results);
+    }).fail(function() {
+      $('#results').html("<p id='status'>We're sorry, but an error occurred.</p>");
+    })
+  }
+}
