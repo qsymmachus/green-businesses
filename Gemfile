@@ -27,4 +27,6 @@ group :test, :development do
   gem 'rspec'
   gem 'factory_girl'
   gem 'faker'
+  gem 'database_cleaner'
+  gem 'simplecov', '~> 0.7.1'
 end

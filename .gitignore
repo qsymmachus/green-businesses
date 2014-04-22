@@ -11,3 +11,6 @@
 
 # Ignore the businesses CSV file
 /db/Certified_Green_Businesses.csv
+
+# Ignore the simplecov assets
+/coverage
