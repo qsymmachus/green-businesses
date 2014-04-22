@@ -1,5 +1,37 @@
-.container {
-  min-width: 400px;
-  width: 80%;
+body {
+  background-color: #42a957;
+}
+
+#top {
+  background-color: #1a4322;
+  margin: 0;
+  padding: 25px 10px;
+  width: 100%;
+}
+
+#top h2 {
+  text-align: center;
+  margin: 0 auto 1em auto;
+  min-width: 300px;
+  width: 50%;
+}
+
+#top p {
+  font-size: 1.25em;
+  margin: 0 auto 1em auto;
+  min-width: 300px;
+  text-align: justify;
+  width: 50%;
+}
+
+#search {
+  display: block;
+  margin: auto;
+  font-size: 1.25em;
+  width: 400px;
+}
+
+#search input[type='text'] {
+  width: 75%;
 }
 
