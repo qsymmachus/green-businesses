@@ -61,3 +61,21 @@ body {
 #search button:hover {
   background-color: #373055;
 }
+
+.status {
+  background-color: #7f7f7f;
+  color: #bac6bc;
+  font-size: 1.3em;
+  padding: 20px 0;
+  opacity: 0.7;
+  text-align: center;
+  width: 100%;
+}
+
+#success {
+  background-color: #36a34b;
+}
+
+#failure {
+  background-color: #555555;
+}

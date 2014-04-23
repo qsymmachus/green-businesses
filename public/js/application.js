@@ -9,7 +9,7 @@ var Search = {
 
   searchCompany: function(e) {
     e.preventDefault();
-    $('#results').html("<p id='status'>Searching...</p>")
+    $('#results').html("<div class='status'>Searching...</div>")
     searchTerm = $(this).serialize();
     $.ajax ({
       type: 'post',
