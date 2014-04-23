@@ -94,7 +94,7 @@ h2 {
 }
 
 .business h2 {
-  margin-top: 2.5em;  
+  margin-top: 2.25em;  
 }
 
 .business p {
@@ -106,8 +106,8 @@ h2 {
   display: inline-block;
   height: 250px;
   margin-right: 2em; 
-  min-width: 250px;
   vertical-align: top;
+  width: 250px;
 }
 
 .map {
