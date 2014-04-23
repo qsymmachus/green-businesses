@@ -54,21 +54,10 @@ body {
   border-radius: 5px;
   background-color: #211a43;
   color: #79758e;
-  margin-left: .5em;
-  padding: 10px;
+  margin-left: -.25em;
+  padding: 12px 10px;
 }
 
-/* Browser specific selectors for form placeholders */
-*::-webkit-input-placeholder {
-    color: #5d635e;
+#search button:hover {
+  background-color: #373055;
 }
-*:-moz-placeholder {
-    color: #5d635e;
-}
-*::-moz-placeholder {
-    color: #5d635e;
-}
-*:-ms-input-placeholder {
-    color: #5d635e;
-}
-
