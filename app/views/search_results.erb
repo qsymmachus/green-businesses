@@ -1,10 +1,17 @@
 <div id="success" class="status">Yes, that business is green certified</div>
 
-<% @results.each do |business| %>
-  <div class="business">
-    <h2><%= business.company %></h2>
-    <p><%= business.address %></p>
-    <p><%= business.city %>, <%= business.zip %></p>
-    <p><%= business.phone %></p>
-  </div>
-<% end %>
+<div id="backdrop">
+  <% @results.each do |business| %>
+    <div class="business">
+      <div class="info">
+        <h2><%= business.company %></h2>
+        <p><%= business.address %></p>
+        <p><%= business.city %>, <%= business.zip %></p>
+        <p><%= business.phone %></p>
+      </div>
+      <div class="map">
+        <!--map goes here-->
+      </div>
+    </div>
+  <% end %>
+</div>
