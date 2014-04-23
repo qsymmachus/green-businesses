@@ -48,10 +48,6 @@ GEM
       rack (>= 1.0)
     shoulda-matchers (2.6.0)
       activesupport (>= 3.0.0)
-    simplecov (0.7.1)
-      multi_json (~> 1.0)
-      simplecov-html (~> 0.7.1)
-    simplecov-html (0.7.1)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -87,7 +83,6 @@ DEPENDENCIES
   rspec
   shotgun
   shoulda-matchers
-  simplecov (~> 0.7.1)
   sinatra
   sinatra-contrib
   thin
