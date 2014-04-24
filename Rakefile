@@ -1,5 +1,6 @@
 require 'rake'
 require 'rspec/core/rake_task'
+load "pg_search/tasks.rb"
 
 
 require ::File.expand_path('../config/environment', __FILE__)

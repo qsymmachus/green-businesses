@@ -4,6 +4,9 @@ ruby '2.0.0'
 # PostgreSQL driver
 gem 'pg'
 
+# PostgreSQL full text search
+gem 'pg_search'
+
 # Sinatra driver
 gem 'sinatra'
 gem 'sinatra-contrib'
