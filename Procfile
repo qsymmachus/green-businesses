@@ -1,1 +1,1 @@
-bundle exec shotgun config.ru -p $PORT
+bundle exec shotgun
