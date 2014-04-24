@@ -9,11 +9,17 @@ def seed_businesses
     data[:address] = row.shift
     data[:city] = row.shift
     data[:zip] = row.shift
-    # Note that line breaks have been interpolated and must be removed:
-    data[:location] = row.shift.gsub("\n", " ")
+    data[:location] = generate_location_url(row.shift)
     puts "Building business '#{data[:company]}'..."
     Business.create(data)
   end
+end
+
+# Generate google maps embed url based on location
+def generate_location_url(location)
+    location = location.gsub("\n", "+")
+    location = location.gsub(" ", "+")
+    "https://www.google.com/maps/embed/v1/place?key=AIzaSyBSK5Z9EypS20-T9HECcccyplpGUNa0KHE&q=" + location
 end
 
 # Let's do it!
