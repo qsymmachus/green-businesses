@@ -126,6 +126,13 @@ h2 {
   height: 250px;
 }
 
+#my-info {
+  float: right;
+  font-size: .75em;
+  margin-right: 1.5em;
+  text-align: left;
+}
+
 /* Media Queries */
 @media screen and (max-width: 600px) {
 
