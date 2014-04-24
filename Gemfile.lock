@@ -30,6 +30,10 @@ GEM
     minitest (5.3.3)
     multi_json (1.9.2)
     pg (0.17.1)
+    pg_search (0.7.3)
+      activerecord (>= 3.1)
+      activesupport (>= 3.1)
+      arel
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
@@ -78,6 +82,7 @@ DEPENDENCIES
   factory_girl
   faker
   pg
+  pg_search
   rack-test
   rake (= 10.3.1)
   rspec

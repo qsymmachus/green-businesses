@@ -3,8 +3,8 @@ get '/' do
 end
 
 post '/search' do
-  @results = Business.search_company(params[:company])
-  if @results
+  @results = Business.search_by_company(params[:company])
+  if @results.first
     erb :search_results, layout: false
   else
     erb :no_results, layout: false
