@@ -122,6 +122,11 @@ h2 {
   width: 250px;
 }
 
+.map iframe {
+  width: 250px;
+  height: 250px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 600px) {
 
